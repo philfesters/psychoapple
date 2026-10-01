@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Psycho Apple | Lucid Streetwear</title>
+<meta name="description" content="Psycho Apple — Cape Town streetwear. Joggers, t-shirts, shirts, denims and hoodies built for the cold nights.">
+<meta name="theme-color" content="#09030f">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Psycho Apple | Lucid Streetwear">
+<meta property="og:description" content="Cape Town streetwear. Hoodies, joggers, tees and denims built for the cold nights. Order on WhatsApp.">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ff3cba' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect width='24' height='24' fill='%2309030f'/%3E%3Cpath d='M12 7.5c-1.5-1.3-5-1.6-6.5 1.4-1.8 3.5.2 9 2.5 11.5 1.2 1.2 2.5 1.2 4 .5 1.5.7 2.8.7 4-.5 2.3-2.5 4.3-8 2.5-11.5-1.5-3-5-2.7-6.5-1.4z'/%3E%3Cpath d='M12 7.5c0-2 1-3.6 3.2-4.5' stroke='%23b53cff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800;900&family=Rubik+Wet+Paint&family=Work+Sans:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+<style>
+  /* Juice WRLD Aesthetic: Deep purples, neon magenta/pink accents, dark void backgrounds */
+  :root {
+    --bg: #09030f;
+    --bg-raised: #140822;
+    --text: #f5eeff;
+    --text-dim: #a395b5;
+    --accent: #b53cff; /* Neon Purple */
+    --accent-dim: #6a1b80;
+    --accent-alt: #ff3cba; /* Neon Pink */
+    --line: #2d1844;
+    color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    background-image: 
+      radial-gradient(circle at 15% 50%, rgba(181, 60, 255, 0.05), transparent 25%),
+      radial-gradient(circle at 85% 30%, rgba(255, 60, 186, 0.05), transparent 25%);
+    color: var(--text);
+    font-family: "Work Sans", -apple-system, "Segoe UI", sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+  
+  a { color: inherit; text-decoration: none; }
+  img, svg { max-width: 100%; display: block; }
+
+  .display {
+    font-family: "Big Shoulders Display", "Arial Narrow", sans-serif;
+    font-weight: 900;
+    letter-spacing: 0.01em;
+    line-height: 0.86;
+  }
+
+  .drippy {
+    font-family: "Rubik Wet Paint", cursive;
+    text-shadow: 0 0 10px rgba(181, 60, 255, 0.4);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  .wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 clamp(20px, 5vw, 56px);
+  }
+
+  /* ---------- Header ---------- */
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: color-mix(in srgb, var(--bg) 85%, transparent);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--line);
+  }
+  .header-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px clamp(20px, 5vw, 56px);
+  }
+  .brand-mark {
+    font-family: "Big Shoulders Display", sans-serif;
+    font-weight: 900;
+    font-size: 24px;
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    text-shadow: 0 0 8px rgba(181, 60, 255, 0.3);
+  }
+  .brand-mark span { color: var(--accent-alt); }
+  
+  .header-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border: 1px solid var(--line);
+    border-radius: 50%;
+    color: var(--text);
+    transition: all .2s ease;
+  }
+  .social-icon:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    box-shadow: 0 0 12px rgba(181, 60, 255, 0.3);
+  }
+  .social-icon svg { width: 18px; height: 18px; }
+
+  .header-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 18px;
+    background: var(--accent);
+    color: #000;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    transition: all .2s ease;
+    box-shadow: 0 0 15px rgba(181, 60, 255, 0.2);
+  }
+  .header-cta:hover {
+    background: var(--text);
+    box-shadow: 0 0 20px rgba(245, 238, 255, 0.4);
+    transform: translateY(-1px);
+  }
+  .header-cta svg { width: 16px; height: 16px; flex: none; }
+
+  /* ---------- Hero ---------- */
+  .hero {
+    padding: clamp(60px, 12vw, 120px) 0 clamp(48px, 8vw, 88px);
+    text-align: center;
+    position: relative;
+  }
+  .hero::before {
+    content: "CPT";
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: "Rubik Wet Paint", cursive;
+    font-size: clamp(120px, 34vw, 260px);
+    color: rgba(181, 60, 255, 0.07);
+    z-index: -1;
+    pointer-events: none;
+  }
+  .hero-mark {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .emblem {
+    width: clamp(64px, 12vw, 96px);
+    height: auto;
+    color: var(--accent-alt);
+    margin-bottom: 16px;
+    filter: drop-shadow(0 0 12px rgba(255, 60, 186, 0.4));
+  }
+  .hero-word {
+    margin: 0;
+    font-size: clamp(52px, 14vw, 120px);
+    line-height: 0.9;
+    color: var(--text);
+    letter-spacing: 0.02em;
+  }
+  .hero-sub {
+    margin: 10px 0 0;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    font-size: clamp(12px, 2vw, 14px);
+    color: var(--accent);
+    text-transform: uppercase;
+  }
+  .hero-tag {
+    max-width: 50ch;
+    margin: 26px auto 0;
+    font-size: clamp(16px, 2.4vw, 19px);
+    color: var(--text-dim);
+  }
+  
+  /* ---------- Featured Drop / New Arrivals ---------- */
+  .featured-drop {
+    margin: 20px 10px clamp(40px, 8vw, 80px);
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid var(--line);
+    background: #000;
+  }
+  .featured-img {
+    width: 100%;
+    height: clamp(300px, 50vw, 500px);
+    object-fit: cover;
+    opacity: 0.7;
+    transition: opacity 0.4s ease;
+  }
+  .featured-drop:hover .featured-img { opacity: 0.5; }
+  
+  .featured-content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    pointer-events: none;
+    background: linear-gradient(to top, rgba(9,3,15,0.9) 0%, transparent 100%);
+  }
+  .featured-badge {
+    background: var(--accent-alt);
+    color: #fff;
+    font-weight: 800;
+    font-size: 12px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    box-shadow: 0 0 15px rgba(255, 60, 186, 0.5);
+  }
+  .featured-title {
+    font-size: clamp(32px, 6vw, 64px);
+    margin: 0;
+    color: #fff;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.8);
+  }
+  .featured-drop .header-cta {
+    pointer-events: auto;
+    margin-top: 24px;
+    background: transparent;
+    border: 2px solid var(--text);
+    color: var(--text);
+  }
+  .featured-drop .header-cta:hover {
+    background: var(--text);
+    color: #000;
+  }
+
+  /* ---------- Product Grid (Real Photos) ---------- */
+  .section-head {
+    padding: clamp(48px, 8vw, 72px) 0 24px;
+    text-align: center;
+  }
+  .section-head h2 {
+    font-size: clamp(36px, 6vw, 52px);
+    margin: 0;
+    line-height: 1;
+    color: var(--text);
+  }
+  .section-head p {
+    color: var(--text-dim);
+    max-width: 52ch;
+    margin: 14px auto 0;
+    font-size: 16px;
+  }
+
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 32px;
+    padding: 0 0 clamp(56px, 9vw, 96px);
+  }
+
+  .product-card {
+    background: var(--bg-raised);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform .3s ease, border-color .3s ease, box-shadow .3s ease;
+    display: flex;
+    flex-direction: column;
+  }
+  .product-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--accent);
+    box-shadow: 0 10px 30px -10px rgba(181, 60, 255, 0.2);
+  }
+  .product-img-wrap {
+    position: relative;
+    width: 100%;
+    padding-top: 120%; /* Aspect ratio */
+    overflow: hidden;
+    background: #000;
+  }
+  .product-img-wrap img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.85;
+    transition: opacity .3s ease, transform .5s ease;
+  }
+  .product-card:hover .product-img-wrap img {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  .product-info {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .product-name {
+    font-family: "Big Shoulders Display", sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    margin: 0 0 4px;
+    color: var(--text);
+  }
+  .product-price {
+    font-size: 15px;
+    color: var(--accent);
+    font-weight: 600;
+    margin: 0 0 12px;
+  }
+  .product-sizes {
+    font-size: 13px;
+    color: var(--text-dim);
+    margin: 0 0 16px;
+    background: rgba(255,255,255,0.05);
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    align-self: flex-start;
+  }
+  .product-btn {
+    margin-top: auto;
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all .2s ease;
+  }
+  .product-card:hover .product-btn {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #000;
+  }
+
+  /* ---------- Size Guide ---------- */
+  .size-guide {
+    background: var(--bg-raised);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: clamp(32px, 5vw, 48px);
+    margin-bottom: clamp(56px, 9vw, 100px);
+    position: relative;
+    overflow: hidden;
+  }
+  .size-guide::after {
+    content: "";
+    position: absolute;
+    right: -50px;
+    bottom: -50px;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(181, 60, 255, 0.1) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .size-header {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  .size-header h3 {
+    font-family: "Big Shoulders Display", sans-serif;
+    font-size: 32px;
+    margin: 0 0 8px;
+  }
+  .size-table-wrap {
+    overflow-x: auto;
+  }
+  .size-table {
+    width: 100%;
+    min-width: 500px;
+    border-collapse: collapse;
+    text-align: center;
+  }
+  .size-table th {
+    font-family: "Big Shoulders Display", sans-serif;
+    font-size: 18px;
+    color: var(--accent);
+    padding: 12px;
+    border-bottom: 2px solid var(--line);
+  }
+  .size-table td {
+    padding: 16px 12px;
+    border-bottom: 1px solid var(--line);
+    color: var(--text-dim);
+    font-size: 15px;
+  }
+  .size-table tr:last-child td { border-bottom: none; }
+  .size-table td:first-child {
+    font-weight: 700;
+    color: var(--text);
+  }
+
+  /* ---------- Footer ---------- */
+  footer {
+    padding: clamp(40px, 7vw, 64px) 0 40px;
+    border-top: 1px solid var(--line);
+    background: #05010a;
+  }
+  .footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  .footer-brand .display { font-size: 32px; color: var(--text); }
+  .footer-brand p { color: var(--text-dim); font-size: 14px; margin: 12px 0 0; max-width: 32ch; }
+  
+  .footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 14.5px;
+  }
+  .footer-contact a { transition: color .2s ease; }
+  .footer-contact a:hover { color: var(--accent); }
+  .footer-contact .label {
+    color: var(--text-dim);
+    font-size: 12px;
+    display: block;
+    margin-bottom: 2px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+  
+  .footer-bottom {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+    font-size: 13px;
+    color: var(--text-dim);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  @media (max-width: 720px) {
+    .product-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 16px; }
+    .product-name { font-size: 20px; }
+    .product-price { font-size: 14px; }
+    .featured-title { font-size: 28px; }
+  }
+
+  /* ---------- Animations ---------- */
+  @media (prefers-reduced-motion: no-preference) {
+    .hero-mark { animation: fadeUp .8s cubic-bezier(.2,.8,.2,1) both; }
+    .hero-tag { animation: fadeUp .8s cubic-bezier(.2,.8,.2,1) .2s both; }
+    .featured-drop { animation: fadeUp .8s cubic-bezier(.2,.8,.2,1) .4s both; }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  }
+
+  /* ---------- Extra visuals ---------- */
+  .hero-word { text-align:center; font-size: clamp(40px, 12vw, 110px); }
+  .emblem { animation: floaty 4s ease-in-out infinite; }
+  .progress { position:fixed; top:0; left:0; height:3px; width:0; z-index:100; background:linear-gradient(90deg,var(--accent),var(--accent-alt)); box-shadow:0 0 10px var(--accent-alt); }
+  .orb { position:fixed; z-index:-1; border-radius:50%; filter:blur(80px); opacity:.35; pointer-events:none; }
+  .o1 { width:320px; height:320px; background:var(--accent); top:10%; left:-120px; animation:drift 16s ease-in-out infinite alternate; }
+  .o2 { width:280px; height:280px; background:var(--accent-alt); bottom:5%; right:-100px; animation:drift 20s ease-in-out infinite alternate-reverse; }
+  .glow { position:fixed; width:320px; height:320px; margin:-160px 0 0 -160px; border-radius:50%; background:radial-gradient(circle,rgba(181,60,255,.18),transparent 65%); pointer-events:none; z-index:-1; opacity:0; transition:opacity .3s; }
+  body::after { content:""; position:fixed; inset:0; pointer-events:none; z-index:60; opacity:.05; background:repeating-linear-gradient(0deg,#fff 0 1px,transparent 1px 3px); }
+  .glitch { position:relative; }
+  .glitch::before, .glitch::after { content:attr(data-text); position:absolute; inset:0; text-align:center; overflow:hidden; }
+  .glitch::before { color:#3cf; clip-path:inset(0 0 55% 0); transform:translateX(-3px); mix-blend-mode:screen; }
+  .glitch::after { color:var(--accent-alt); clip-path:inset(55% 0 0 0); transform:translateX(3px); mix-blend-mode:screen; }
+  .ticker { overflow:hidden; border-block:1px solid var(--line); background:rgba(181,60,255,.08); margin:0 0 28px; padding:10px 0; white-space:nowrap; }
+  .ticker-track { display:inline-flex; }
+  .ticker-track span { font-family:"Big Shoulders Display",sans-serif; font-weight:800; font-size:18px; letter-spacing:.2em; color:var(--accent-alt); padding-right:0; }
+  .featured-drop { border:1px solid transparent; background:linear-gradient(#000,#000) padding-box, linear-gradient(120deg,var(--accent),var(--accent-alt),#3cf,var(--accent)) border-box; background-size:100% 100%,300% 300%; animation:borderflow 6s linear infinite; }
+  .product-card { position:relative; transform-style:preserve-3d; will-change:transform; }
+  .product-card:hover { box-shadow:0 14px 40px -10px rgba(255,60,186,.35); }
+  .tag { position:absolute; top:12px; left:12px; z-index:2; background:var(--accent-alt); color:#fff; font-size:11px; font-weight:800; letter-spacing:.12em; padding:4px 10px; border-radius:20px; box-shadow:0 0 12px rgba(255,60,186,.6); }
+  .product-img-wrap::after { content:""; position:absolute; inset:0; background:linear-gradient(115deg,transparent 40%,rgba(255,255,255,.18) 50%,transparent 60%); transform:translateX(-120%); transition:transform .7s ease; pointer-events:none; }
+  .product-card:hover .product-img-wrap::after { transform:translateX(120%); }
+  .reveal { opacity:0; transform:translateY(30px); transition:opacity .7s ease, transform .7s ease; }
+  .reveal.in { opacity:1; transform:none; }
+  @keyframes floaty { 50% { transform:translateY(-10px) rotate(-4deg); } }
+  @keyframes drift { to { transform:translate(60px,-80px) scale(1.2); } }
+  @keyframes borderflow { to { background-position:0 0,300% 0; } }
+  @keyframes marquee { to { transform:translateX(-50%); } }
+  @keyframes glitchA { 0%,90%,100% { transform:translateX(-3px); clip-path:inset(0 0 55% 0); } 92% { transform:translateX(-8px); clip-path:inset(20% 0 40% 0); } 96% { transform:translateX(6px); clip-path:inset(60% 0 10% 0); } }
+  @keyframes glitchB { 0%,90%,100% { transform:translateX(3px); clip-path:inset(55% 0 0 0); } 93% { transform:translateX(8px); clip-path:inset(10% 0 60% 0); } 97% { transform:translateX(-6px); clip-path:inset(40% 0 30% 0); } }
+  @media (prefers-reduced-motion: no-preference) {
+    .ticker-track { animation:marquee 22s linear infinite; }
+    .glitch::before { animation:glitchA 3.5s infinite; }
+    .glitch::after { animation:glitchB 3.5s infinite; }
+  }
+  @media (prefers-reduced-motion: reduce) { .reveal { opacity:1; transform:none; } .orb,.emblem { animation:none; } }
+  @media (hover:none) { .glow { display:none; } }
+
+  /* ---------- Cyberpunk collection ---------- */
+  .cy { --cy:#00f0ff; --mg:#ff2bd6; --yl:#fcee09; }
+  .cy-eyebrow { color:var(--cy) !important; font-family:"Courier New",monospace; letter-spacing:.2em; font-size:12px !important; margin:0 0 10px !important; }
+  .cy .section-head h2 { color:var(--yl); }
+  .cy-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:26px; padding-bottom:clamp(56px,9vw,96px); }
+  .cy-card { position:relative; display:flex; flex-direction:column; padding:22px 20px 20px; color:var(--cy); background:linear-gradient(rgba(0,240,255,.05) 1px,transparent 1px) 0 0/100% 8px, #060a14; border:1px solid var(--cy); clip-path:polygon(0 0,calc(100% - 22px) 0,100% 22px,100% 100%,22px 100%,0 calc(100% - 22px)); box-shadow:inset 0 0 30px rgba(0,240,255,.12); transition:color .3s, border-color .3s, transform .3s; overflow:hidden; }
+  .cy-card:nth-child(even) { color:var(--mg); border-color:var(--mg); box-shadow:inset 0 0 30px rgba(255,43,214,.14); }
+  .cy-card::after { content:""; position:absolute; left:0; right:0; top:-30%; height:30%; background:linear-gradient(transparent,currentColor,transparent); opacity:.14; pointer-events:none; }
+  .cy-card:hover { transform:translateY(-6px); color:var(--yl); border-color:var(--yl); }
+  .cy-code { font-family:"Courier New",monospace; font-size:11px; letter-spacing:.2em; opacity:.8; }
+  .cy-art { width:62%; max-height:190px; margin:14px auto 12px; filter:drop-shadow(0 0 6px currentColor) drop-shadow(0 0 16px currentColor); }
+  .cy-name { font-family:"Big Shoulders Display",sans-serif; font-weight:800; font-size:24px; margin:0 0 6px; color:var(--text); letter-spacing:.04em; }
+  .cy-meta { display:flex; justify-content:space-between; gap:8px; font-family:"Courier New",monospace; font-size:13px; margin-bottom:16px; }
+  .cy-meta span:first-child { color:var(--yl); font-weight:700; }
+  .cy-btn { margin-top:auto; padding:10px; border:1px solid currentColor; font-family:"Courier New",monospace; font-size:12px; letter-spacing:.1em; text-align:center; transition:background .2s, color .2s; }
+  .cy-card:hover .cy-btn { background:var(--yl); color:#000; }
+  @media (prefers-reduced-motion: no-preference) {
+    .cy-card::after { animation:scan 4s linear infinite; }
+    .cy-art { animation:flicker 5s steps(1) infinite; }
+    @keyframes scan { to { top:110%; } }
+    @keyframes flicker { 0%,92%,96%,100% { opacity:1; } 94% { opacity:.4; } 98% { opacity:.7; } }
+  }
+
+  /* ---------- V3: art, bubbles, extras ---------- */
+  .product-img-wrap { background:linear-gradient(160deg,#1f0b36,#07020d); }
+  .product-img-wrap svg.art { position:absolute; inset:0; width:100%; height:100%; filter:drop-shadow(0 0 8px currentColor); transition:transform .5s ease; }
+  .product-card:hover svg.art { transform:scale(1.07) rotate(-2deg); }
+  .banner { opacity:1 !important; display:flex; align-items:center; justify-content:center; color:var(--accent-alt); background:radial-gradient(circle at 50% 45%,rgba(181,60,255,.45),transparent 60%),linear-gradient(rgba(181,60,255,.12) 1px,transparent 1px) 0 0/100% 28px,linear-gradient(90deg,rgba(181,60,255,.12) 1px,transparent 1px) 0 0/28px 100%,#0b0414; }
+  .banner svg { height:78%; width:auto; filter:drop-shadow(0 0 18px currentColor); animation:floaty 5s ease-in-out infinite; }
+  .bubbles { position:fixed; inset:0; z-index:-1; overflow:hidden; pointer-events:none; }
+  .bub { position:absolute; bottom:-160px; border-radius:50%; border:1px solid rgba(255,255,255,.28); background:radial-gradient(circle at 30% 28%,rgba(255,255,255,.35),rgba(181,60,255,.10) 40%,rgba(255,60,186,.05) 70%,transparent 72%); box-shadow:inset 0 0 14px rgba(255,255,255,.14),0 0 18px rgba(181,60,255,.15); animation:rise linear infinite; }
+  @keyframes rise { 0% { transform:translate(0,0); opacity:0; } 10% { opacity:1; } 50% { transform:translate(var(--sw),-60vh); } 100% { transform:translate(calc(var(--sw)*-1),-125vh); opacity:.2; } }
+  .section-head::after, .hero-sub::after, .size-header::after { content:""; display:block; width:150px; height:34px; margin:18px auto 0;
+    background:
+      radial-gradient(circle,rgba(255,255,255,.1) 0 3px,rgba(255,255,255,.5) 4px,transparent 5px) 8px 14px/18px 18px no-repeat,
+      radial-gradient(circle,rgba(255,255,255,.08) 0 5px,rgba(255,255,255,.45) 6px,transparent 7px) 38px 4px/26px 26px no-repeat,
+      radial-gradient(circle,rgba(255,255,255,.1) 0 2px,rgba(255,255,255,.5) 3px,transparent 4px) 72px 18px/12px 12px no-repeat,
+      radial-gradient(circle,rgba(255,255,255,.08) 0 6px,rgba(255,60,186,.55) 7px,transparent 8px) 90px 2px/30px 30px no-repeat,
+      radial-gradient(circle,rgba(255,255,255,.1) 0 2px,rgba(255,255,255,.5) 3px,transparent 4px) 130px 12px/12px 12px no-repeat;
+    animation:bob 3s ease-in-out infinite; }
+  @keyframes bob { 50% { transform:translateY(-6px); } }
+  .perks { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:20px; padding-bottom:clamp(40px,7vw,72px); }
+  .perk { padding:24px; border:1px solid var(--line); border-radius:10px; background:linear-gradient(145deg,rgba(181,60,255,.12),rgba(255,60,186,.04)); backdrop-filter:blur(6px); }
+  .perk b { font-family:"Rubik Wet Paint",cursive; font-size:38px; background:linear-gradient(90deg,var(--accent),var(--accent-alt)); -webkit-background-clip:text; background-clip:text; color:transparent; }
+  .perk h4 { margin:6px 0 4px; font-family:"Big Shoulders Display",sans-serif; font-size:24px; }
+  .perk p { margin:0; color:var(--text-dim); font-size:14px; }
+  .hero-sub { background:linear-gradient(90deg,var(--accent),var(--accent-alt),#3cf0ff,var(--accent)); background-size:300% 100%; -webkit-background-clip:text; background-clip:text; color:transparent; animation:shimmer 6s linear infinite; }
+  .hero-sub::after { -webkit-text-fill-color:initial; }
+  @keyframes shimmer { to { background-position:300% 0; } }
+  .fab { position:fixed; right:16px; bottom:16px; z-index:70; width:54px; height:54px; border-radius:50%; display:flex; align-items:center; justify-content:center; background:var(--accent); color:#000; box-shadow:0 0 18px rgba(181,60,255,.6); }
+  .fab svg { width:28px; height:28px; }
+  .fab::after { content:""; position:absolute; inset:0; border-radius:50%; border:2px solid var(--accent-alt); animation:ping 2s ease-out infinite; }
+  @keyframes ping { to { transform:scale(1.7); opacity:0; } }
+  @media (prefers-reduced-motion: reduce) { .bub,.fab::after,.banner svg,.section-head::after { animation:none; } }
+
+  /* ---------- V4: edge light chase (2 lights circling the screen) ---------- */
+  .edge { position:fixed; inset:0; width:100%; height:100%; z-index:95; pointer-events:none; opacity:.9; }
+  .edge rect { fill:none; x:5px; y:5px; width:calc(100% - 10px); height:calc(100% - 10px); rx:26px; ry:26px; stroke-linecap:butt; stroke-dashoffset:0; }
+  /* dasharray = "0 gap length rest": every layer ends at the same leading point, so the tail tapers */
+  .edge .g { stroke-width:14; opacity:.16; stroke-dasharray:0 21 9 70; }
+  .edge .m { stroke-width:7;  opacity:.45; stroke-dasharray:0 25 5 70; }
+  .edge .c { stroke-width:3;               stroke-dasharray:0 28 2 70; }
+  .edge .a .g, .edge .a .m { stroke:var(--accent); }
+  .edge .a .c { stroke:#efe0ff; }
+  .edge .b .g, .edge .b .m { stroke:var(--accent-alt); }
+  .edge .b .c { stroke:#ffe0f6; }
+  /* --d = seconds per lap, --p = start offset. Same --d on both = constant gap; different = pink catches up and passes */
+  .edge .a { --d:8s;   --p:-2s; }
+  .edge .b { --d:6.4s; --p:0s; }
+  @keyframes chase { to { stroke-dashoffset:-100; } }
+  @keyframes edgePulse { from { opacity:.65; } to { opacity:1; } }
+  @media (prefers-reduced-motion: no-preference) {
+    .edge { animation:edgePulse 2.4s ease-in-out infinite alternate; }
+    .edge rect { animation:chase var(--d) linear var(--p) infinite; }
+  }
+  @media (prefers-reduced-motion: reduce) { .edge { display:none; } }
+
+  /* ---------- V6 additions ---------- */
+  [hidden] { display: none !important; }
+  .drop-label { margin: 10px 0 0; font-size: 13px; letter-spacing: .12em; text-transform: uppercase; color: var(--text-dim); }
+  .drop-timer { display: flex; gap: 10px; margin-top: 16px; }
+  .drop-timer div { min-width: 58px; padding: 8px 6px 6px; border: 1px solid rgba(245,238,255,.25); border-radius: 8px; background: rgba(9,3,15,.78); }
+  .drop-timer b { display: block; font-family: "Big Shoulders Display", sans-serif; font-weight: 900; font-size: 30px; line-height: 1; font-variant-numeric: tabular-nums; }
+  .drop-timer small { font-size: 10px; letter-spacing: .14em; text-transform: uppercase; color: var(--text-dim); }
+  .drop-live { margin-top: 16px; font-family: "Big Shoulders Display", sans-serif; font-weight: 900; font-size: 28px; letter-spacing: .08em; color: var(--accent-alt); text-shadow: 0 0 14px rgba(255,60,186,.6); }
+
+  .filters { display: flex; gap: 10px; overflow-x: auto; padding: 8px 2px 0; justify-content: safe center; scrollbar-width: none; }
+  .filters::-webkit-scrollbar { display: none; }
+  .filters button { flex: none; height: 40px; padding: 0 20px; border-radius: 20px; border: 1px solid var(--line); background: transparent; color: var(--text); font: 600 14px "Work Sans", sans-serif; cursor: pointer; transition: background .2s, border-color .2s, color .2s; }
+  .filters button:hover { border-color: var(--accent); }
+  .filters button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #000; }
+
+  .opt { margin: 0 0 14px; }
+  .opt-l { display: block; font-size: 12px; color: var(--text-dim); margin-bottom: 8px; }
+  .opt-l b { color: var(--text); font-weight: 600; }
+  .swatches, .chips { display: flex; flex-wrap: wrap; gap: 10px; }
+  .sw { width: 30px; height: 30px; padding: 0; border-radius: 50%; background: var(--c); border: 2px solid var(--line); cursor: pointer; }
+  .sw[aria-checked="true"] { border-color: var(--text); box-shadow: 0 0 0 2px var(--bg-raised), 0 0 0 4px var(--accent); }
+  .chip { min-width: 42px; height: 38px; padding: 0 10px; border: 1px solid var(--line); border-radius: 6px; background: transparent; color: var(--text); font: 600 13px "Work Sans", sans-serif; cursor: pointer; transition: background .15s, color .15s, border-color .15s; }
+  .chip:hover { border-color: var(--accent); }
+  .chip[aria-checked="true"] { background: var(--accent); border-color: var(--accent); color: #000; }
+  .stock { position: absolute; left: 12px; bottom: 12px; z-index: 2; padding: 5px 10px; border-radius: 20px; background: rgba(9,3,15,.85); border: 1px solid var(--accent-alt); color: var(--accent-alt); font-size: 12px; font-weight: 700; }
+  .product-btn { display: block; }
+
+  .size-sub { margin: 28px 0 12px; font-family: "Big Shoulders Display", sans-serif; font-weight: 800; font-size: 20px; letter-spacing: .04em; }
+  .size-sub.dim { margin: 16px 0 0; font: 400 14px "Work Sans", sans-serif; color: var(--text-dim); }
+
+  @media (max-width: 720px) {
+    .product-info { padding: 14px; }
+    .orb { filter: blur(48px); }
+    .glitch::before, .glitch::after { mix-blend-mode: normal; }
+    .perk { backdrop-filter: none; }
+    .drop-timer { gap: 6px; }
+    .drop-timer div { min-width: 52px; }
+    .drop-timer b { font-size: 26px; }
+  }
+</style>
+</head>
+<body>
+<div class="bubbles" id="bubbles" aria-hidden="true"></div>
+<div class="progress" id="progress"></div>
+<div class="orb o1"></div><div class="orb o2"></div><div class="glow" id="glow"></div>
+<svg class="edge" aria-hidden="true" focusable="false">
+  <g class="a"><rect class="g" x="5" y="5" width="100%" height="100%" rx="26" pathLength="100"/><rect class="m" x="5" y="5" width="100%" height="100%" rx="26" pathLength="100"/><rect class="c" x="5" y="5" width="100%" height="100%" rx="26" pathLength="100"/></g>
+  <g class="b"><rect class="g" x="5" y="5" width="100%" height="100%" rx="26" pathLength="100"/><rect class="m" x="5" y="5" width="100%" height="100%" rx="26" pathLength="100"/><rect class="c" x="5" y="5" width="100%" height="100%" rx="26" pathLength="100"/></g>
+</svg>
+
+<header>
+  <div class="header-row wrap" style="padding-top:14px; padding-bottom:14px;">
+    <a href="#top" class="brand-mark drippy">PSYCHO APPLE<span>.</span></a>
+    
+    <div class="header-actions">
+      <!-- Instagram -->
+      <a href="#" class="social-icon" aria-label="Instagram" data-social="instagram" hidden>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+      </a>
+      <!-- Facebook -->
+      <a href="#" class="social-icon" aria-label="Facebook" data-social="facebook" hidden>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+      </a>
+      <!-- WhatsApp CTA -->
+      <a class="header-cta" href="https://wa.me/27794652918?text=Hi%21%20I%27d%20like%20to%20check%20out%20Psycho%20Apple" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39a9.9 9.9 0 0 0 4.75 1.21h.01c5.46 0 9.9-4.45 9.9-9.91C21.96 6.45 17.5 2 12.04 2Zm5.8 14.03c-.24.68-1.4 1.3-1.93 1.38-.5.08-1.1.11-1.78-.11-.41-.13-.94-.3-1.62-.6-2.85-1.23-4.71-4.1-4.85-4.29-.14-.19-1.16-1.54-1.16-2.94 0-1.4.73-2.08.99-2.37.26-.28.57-.35.76-.35.19 0 .38 0 .54.01.17.01.4-.07.63.48.24.57.8 1.98.87 2.12.07.14.12.31.02.5-.09.19-.14.31-.28.47-.14.16-.29.36-.42.48-.14.14-.28.29-.12.57.16.28.71 1.17 1.53 1.9 1.05.94 1.94 1.23 2.22 1.37.28.14.44.12.6-.07.16-.19.68-.79.87-1.06.19-.28.37-.23.62-.14.26.09 1.63.77 1.91.91.28.14.47.21.53.33.07.12.07.68-.17 1.36Z"/></svg>
+        <span class="cta-text">WhatsApp</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <section class="wrap hero">
+    <div class="hero-mark">
+      <!-- Psycho Apple Emblem -->
+      <svg class="emblem" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 7.5c-1.5-1.3-5-1.6-6.5 1.4-1.8 3.5.2 9 2.5 11.5 1.2 1.2 2.5 1.2 4 .5 1.5.7 2.8.7 4-.5 2.3-2.5 4.3-8 2.5-11.5-1.5-3-5-2.7-6.5-1.4z"/>
+        <path d="M12 7.5c0-2 1-3.6 3.2-4.5" stroke="var(--accent)"/>
+        <path d="M9 11l2 2-1.5 2.5 3 1.5" stroke="var(--accent)" stroke-width="1"/>
+        <circle cx="16.5" cy="9.5" r="1.2" stroke="var(--accent-alt)" stroke-width="1"/>
+      </svg>
+      <h1 class="hero-word drippy glitch" data-text="PSYCHO APPLE">PSYCHO APPLE</h1>
+      <p class="hero-sub">Streetwear &mdash; Cape Town</p>
+    </div>
+    <p class="hero-tag">Cape Town streetwear. Lucid dreams, real fits. Joggers, tees, shirts, and hoodies — built for the cold nights and the city lights.</p>
+  </section>
+
+  <div class="ticker" aria-hidden="true"><div class="ticker-track"><span>PSYCHO APPLE &nbsp;//&nbsp; 021 &nbsp;//&nbsp; LUCID DROP &nbsp;//&nbsp; COLD NIGHTS &nbsp;//&nbsp; CAPE TOWN &nbsp;//&nbsp; LEGENDARY NEVER DIES &nbsp;//&nbsp; </span><span>PSYCHO APPLE &nbsp;//&nbsp; 021 &nbsp;//&nbsp; LUCID DROP &nbsp;//&nbsp; COLD NIGHTS &nbsp;//&nbsp; CAPE TOWN &nbsp;//&nbsp; LEGENDARY NEVER DIES &nbsp;//&nbsp; </span></div></div>
+
+  <!-- Featured Drop Section -->
+  <div class="wrap" style="padding-top:0;">
+    <a href="https://wa.me/27794652918?text=Hi%21%20I%27d%20like%20to%20know%20more%20about%20the%20Lucid%20Drop." target="_blank" rel="noopener" class="featured-drop" style="display:block;">
+      <div class="featured-img banner"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width=".5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 7.5c-1.5-1.3-5-1.6-6.5 1.4-1.8 3.5.2 9 2.5 11.5 1.2 1.2 2.5 1.2 4 .5 1.5.7 2.8.7 4-.5 2.3-2.5 4.3-8 2.5-11.5-1.5-3-5-2.7-6.5-1.4z"/><path d="M12 7.5c0-2 1-3.6 3.2-4.5" stroke="#3cf0ff"/><path d="M9 11l2 2-1.5 2.5 3 1.5" stroke="#3cf0ff"/></svg></div>
+      <div class="featured-content">
+        <span class="featured-badge">New Arrivals</span>
+        <h2 class="featured-title drippy">THE LUCID DROP</h2>
+        <p class="drop-label" id="dropLabel"></p>
+        <div class="drop-timer" id="dropTimer"><div><b id="dD">00</b><small>days</small></div><div><b id="dH">00</b><small>hrs</small></div><div><b id="dM">00</b><small>min</small></div><div><b id="dS">00</b><small>sec</small></div></div>
+        <span class="header-cta">Shop the Collection</span>
+      </div>
+    </a>
+  </div>
+
+  <div class="wrap">
+    <nav class="filters" aria-label="Filter products">
+      <button type="button" data-f="all" aria-pressed="true">All</button>
+      <button type="button" data-f="tops" aria-pressed="false">Tops</button>
+      <button type="button" data-f="bottoms" aria-pressed="false">Bottoms</button>
+      <button type="button" data-f="gear" aria-pressed="false">Gear</button>
+      <button type="button" data-f="cyber" aria-pressed="false">Cyber</button>
+    </nav>
+  </div>
+
+  <section class="wrap">
+    <div class="section-head">
+      <h2 class="display">CATALOG</h2>
+      <p>Select your piece. Tap to check stock, colors, and confirm your size on WhatsApp.</p>
+    </div>
+
+    <div class="product-grid">
+      <!-- Product 1 -->
+      <article class="product-card reveal" data-name="Heavyweight Hoodie" data-cat="tops" data-sizes="S,M,L,XL,XXL" data-colors="Black:#141414|Purple:#6a1b80|Ash:#8a8795" data-stock="9">
+        <div class="product-img-wrap">
+          <svg class="art" viewBox="0 0 100 120" style="color:#b53cff" fill="currentColor" fill-opacity=".14" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><circle cx="50" cy="60" r="46" fill-opacity=".08" stroke="none"/><circle cx="50" cy="60" r="34" fill-opacity=".06" stroke="none"/><path d="M32 14Q50 30 68 14L92 32L84 64L74 60V108H26V60L16 64L8 32Z"/><path d="M38 16Q50 36 62 16"/><path d="M36 82h28l4 16H32z"/><path d="M46 34v14M54 34v14"/></svg>
+          <span class="tag">HOT</span>
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Heavyweight Hoodie</h3>
+          <div class="product-price">From R550.00</div>
+          <div class="product-sizes">Sizes: S &ndash; XXL</div>
+          <a class="product-btn" href="https://wa.me/27794652918?text=Hi%21%20I%27m%20interested%20in%20the%20Heavyweight%20Hoodies." target="_blank" rel="noopener">Order via WhatsApp</a>
+        </div>
+      </article>
+
+      <!-- Product 2 -->
+      <article class="product-card reveal" data-name="Utility Joggers" data-cat="bottoms" data-sizes="S,M,L,XL,XXL" data-colors="Black:#141414|Olive:#4a5238|Slate:#4b5563" data-stock="12">
+        <div class="product-img-wrap">
+          <svg class="art" viewBox="0 0 100 120" style="color:#ff3cba" fill="currentColor" fill-opacity=".14" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><circle cx="50" cy="60" r="46" fill-opacity=".08" stroke="none"/><circle cx="50" cy="60" r="34" fill-opacity=".06" stroke="none"/><path d="M28 10H72L76 104H56L50 48L44 104H24Z"/><path d="M28 20H72M25 92h19M56 92h19"/><path d="M50 20v28"/></svg>
+          <span class="tag">NEW</span>
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Utility Joggers</h3>
+          <div class="product-price">From R450.00</div>
+          <div class="product-sizes">Sizes: S &ndash; XXL</div>
+          <a class="product-btn" href="https://wa.me/27794652918?text=Hi%21%20I%27m%20interested%20in%20the%20Utility%20Joggers." target="_blank" rel="noopener">Order via WhatsApp</a>
+        </div>
+      </article>
+
+      <!-- Product 3 -->
+      <article class="product-card reveal" data-name="Graphic T-Shirt" data-cat="tops" data-sizes="S,M,L,XL,XXL" data-colors="Black:#141414|White:#f2f2f2|Violet:#b53cff" data-stock="4">
+        <div class="product-img-wrap">
+          <svg class="art" viewBox="0 0 100 120" style="color:#3cf0ff" fill="currentColor" fill-opacity=".14" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><circle cx="50" cy="60" r="46" fill-opacity=".08" stroke="none"/><circle cx="50" cy="60" r="34" fill-opacity=".06" stroke="none"/><path d="M35 12L50 20L65 12L90 28L80 46L72 42V104H28V42L20 46L10 28Z"/><path d="M38 12Q50 26 62 12"/><circle cx="50" cy="64" r="9"/><path d="M50 55q3-5 6-4"/></svg>
+          <span class="tag">LIMITED</span>
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Graphic T-Shirt</h3>
+          <div class="product-price">From R250.00</div>
+          <div class="product-sizes">Sizes: S &ndash; XXL</div>
+          <a class="product-btn" href="https://wa.me/27794652918?text=Hi%21%20I%27m%20interested%20in%20the%20Graphic%20Tees." target="_blank" rel="noopener">Order via WhatsApp</a>
+        </div>
+      </article>
+
+      <!-- Product 4 -->
+      <article class="product-card reveal" data-name="Flannel Shirt" data-cat="tops" data-sizes="S,M,L,XL,XXL" data-colors="Purple Check:#6a1b80|Red Check:#a3202c" data-stock="9">
+        <div class="product-img-wrap">
+          <svg class="art" viewBox="0 0 100 120" style="color:#ff7a3c" fill="currentColor" fill-opacity=".14" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><circle cx="50" cy="60" r="46" fill-opacity=".08" stroke="none"/><circle cx="50" cy="60" r="34" fill-opacity=".06" stroke="none"/><clipPath id="fc4"><path d="M35 12L50 18L65 12L90 28L82 62L72 58V106H28V58L18 62L10 28Z"/></clipPath><path d="M35 12L50 18L65 12L90 28L82 62L72 58V106H28V58L18 62L10 28Z"/><g clip-path="url(#fc4)" stroke-width="1" opacity=".8"><path d="M20 10V110"/><path d="M30 10V110"/><path d="M40 10V110"/><path d="M50 10V110"/><path d="M60 10V110"/><path d="M70 10V110"/><path d="M80 10V110"/><path d="M90 10V110"/><path d="M0 24H100"/><path d="M0 36H100"/><path d="M0 48H100"/><path d="M0 60H100"/><path d="M0 72H100"/><path d="M0 84H100"/><path d="M0 96H100"/><path d="M0 108H100"/></g><path d="M42 14L50 26L58 14M50 26V106"/></svg>
+          <span class="tag">NEW</span>
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Flannel Shirt</h3>
+          <div class="product-price">From R350.00</div>
+          <div class="product-sizes">Sizes: S &ndash; XXL</div>
+          <a class="product-btn" href="https://wa.me/27794652918?text=Hi%21%20I%27m%20interested%20in%20the%20Flannel%20Shirts." target="_blank" rel="noopener">Order via WhatsApp</a>
+        </div>
+      </article>
+      
+      <!-- Product 5 -->
+      <article class="product-card reveal" data-name="Street Denims" data-cat="bottoms" data-sizes="28,30,32,34,36,38" data-colors="Washed Black:#2a2a2e|Indigo:#2c3e73" data-stock="6">
+        <div class="product-img-wrap">
+          <svg class="art" viewBox="0 0 100 120" style="color:#5b8cff" fill="currentColor" fill-opacity=".14" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><circle cx="50" cy="60" r="46" fill-opacity=".08" stroke="none"/><circle cx="50" cy="60" r="34" fill-opacity=".06" stroke="none"/><path d="M28 10H72L78 106H54L50 46L46 106H22Z"/><path d="M28 20H72M34 20q4 14 12 14M66 20q-4 14-12 14M50 20v26" stroke-dasharray="3 2"/></svg>
+          <span class="tag">HOT</span>
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Street Denims</h3>
+          <div class="product-price">From R600.00</div>
+          <div class="product-sizes">Waist: 28 &ndash; 38</div>
+          <a class="product-btn" href="https://wa.me/27794652918?text=Hi%21%20I%27m%20interested%20in%20the%20Street%20Denims." target="_blank" rel="noopener">Order via WhatsApp</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Gear -->
+  <section class="wrap">
+    <div class="section-head"><h2 class="display">GEAR &amp; ACCESSORIES</h2><p>Beanies, caps, bags and extra layers to finish the fit.</p></div>
+    <div class="product-grid">
+      <article class="product-card reveal" data-name="Ribbed Beanie" data-cat="gear" data-sizes="" data-colors="Black:#141414|Purple:#6a1b80|Pink:#ff3cba" data-stock="15">
+        <div class="product-img-wrap"><svg class="art" viewBox="0 0 100 120" style="color:#ff3cba" fill="currentColor" fill-opacity=".14" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><circle cx="50" cy="60" r="46" fill-opacity=".08" stroke="none"/><circle cx="50" cy="60" r="34" fill-opacity=".06" stroke="none"/><path d="M20 72Q20 26 50 26Q80 26 80 72Z"/><path d="M16 72H84V90H16Z"/><path d="M34 32v40M50 26v46M66 32v40M22 81h56" /><circle cx="50" cy="19" r="7"/></svg><span class="tag">NEW</span></div>
+        <div class="product-info"><h3 class="product-name">Ribbed Beanie</h3><div class="product-price">From R180.00</div><div class="product-sizes">One size</div><a class="product-btn" href="https://wa.me/27794652918?text=Hi%21%20I%27m%20interested%20in%20the%20Ribbed%20Beanie." target="_blank" rel="noopener">Order via WhatsApp</a></div>
+      </article>
+      <article class="product-card reveal" data-name="Snapback Cap" data-cat="gear" data-sizes="" data-colors="Black:#141414|Purple:#6a1b80" data-stock="10">
+        <div class="product-img-wrap"><svg class="art" viewBox="0 0 100 120" style="color:#3cf0ff" fill="currentColor" fill-opacity=".14" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><circle cx="50" cy="60" r="46" fill-opacity=".08" stroke="none"/><circle cx="50" cy="60" r="34" fill-opacity=".06" stroke="none"/><path d="M22 74Q22 36 52 36Q80 36 80 74Z"/><path d="M62 74Q96 70 99 82Q80 86 56 80Z"/><circle cx="52" cy="35" r="3"/><circle cx="50" cy="58" r="8"/></svg><span class="tag">HOT</span></div>
+        <div class="product-info"><h3 class="product-name">Snapback Cap</h3><div class="product-price">From R220.00</div><div class="product-sizes">Adjustable</div><a class="product-btn" href="https://wa.me/27794652918?text=Hi%21%20I%27m%20interested%20in%20the%20Snapback%20Cap." target="_blank" rel="noopener">Order via WhatsApp</a></div>
+      </article>
+      <article class="product-card reveal" data-name="Bucket Hat" data-cat="gear" data-sizes="" data-colors="Black:#141414|Violet:#b53cff" data-stock="7">
+        <div class="product-img-wrap"><svg class="art" viewBox="0 0 100 120" style="color:#b53cff" fill="currentColor" fill-opacity=".14" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><circle cx="50" cy="60" r="46" fill-opacity=".08" stroke="none"/><circle cx="50" cy="60" r="34" fill-opacity=".06" stroke="none"/><path d="M26 72Q26 38 50 38Q74 38 74 72"/><path d="M8 74Q50 98 92 74Q50 62 8 74Z"/><path d="M27 66Q50 74 73 66" stroke-dasharray="3 2"/></svg><span class="tag">NEW</span></div>
+        <div class="product-info"><h3 class="product-name">Bucket Hat</h3><div class="product-price">From R250.00</div><div class="product-sizes">One size</div><a class="product-btn" href="https://wa.me/27794652918?text=Hi%21%20I%27m%20interested%20in%20the%20Bucket%20Hat." target="_blank" rel="noopener">Order via WhatsApp</a></div>
+      </article>
+      <article class="product-card reveal" data-name="Canvas Tote" data-cat="gear" data-sizes="" data-colors="Black:#141414|Natural:#d9cdb4" data-stock="11">
+        <div class="product-img-wrap"><svg class="art" viewBox="0 0 100 120" style="color:#fcee09" fill="currentColor" fill-opacity=".14" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><circle cx="50" cy="60" r="46" fill-opacity=".08" stroke="none"/><circle cx="50" cy="60" r="34" fill-opacity=".06" stroke="none"/><path d="M24 46H76L82 108H18Z"/><path d="M38 46Q38 18 50 18Q62 18 62 46"/><circle cx="50" cy="78" r="12"/><path d="M50 66q4-6 8-4M44 78l3 3-2 4 4 2" stroke-width="1.2"/></svg><span class="tag">HOT</span></div>
+        <div class="product-info"><h3 class="product-name">Canvas Tote</h3><div class="product-price">From R200.00</div><div class="product-sizes">Large</div><a class="product-btn" href="https://wa.me/27794652918?text=Hi%21%20I%27m%20interested%20in%20the%20Canvas%20Tote." target="_blank" rel="noopener">Order via WhatsApp</a></div>
+      </article>
+      <article class="product-card reveal" data-name="Crew Socks (3-pack)" data-cat="gear" data-sizes="" data-colors="Black:#141414|White:#f2f2f2" data-stock="14">
+        <div class="product-img-wrap"><svg class="art" viewBox="0 0 100 120" style="color:#ff7a3c" fill="currentColor" fill-opacity=".14" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><circle cx="50" cy="60" r="46" fill-opacity=".08" stroke="none"/><circle cx="50" cy="60" r="34" fill-opacity=".06" stroke="none"/><path d="M36 14H64V70L82 88Q88 106 70 106H46Q32 106 36 88Z"/><path d="M36 24H64M36 32H64" stroke-dasharray="4 3"/><path d="M44 96h18" /></svg><span class="tag">NEW</span></div>
+        <div class="product-info"><h3 class="product-name">Crew Socks (3-pack)</h3><div class="product-price">From R90.00</div><div class="product-sizes">One size</div><a class="product-btn" href="https://wa.me/27794652918?text=Hi%21%20I%27m%20interested%20in%20the%20Crew%20Socks." target="_blank" rel="noopener">Order via WhatsApp</a></div>
+      </article>
+      <article class="product-card reveal" data-name="Bomber Jacket" data-cat="gear" data-sizes="S,M,L,XL,XXL" data-colors="Black:#141414|Violet:#b53cff" data-stock="3">
+        <div class="product-img-wrap"><svg class="art" viewBox="0 0 100 120" style="color:#5b8cff" fill="currentColor" fill-opacity=".14" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><circle cx="50" cy="60" r="46" fill-opacity=".08" stroke="none"/><circle cx="50" cy="60" r="34" fill-opacity=".06" stroke="none"/><path d="M34 14Q50 26 66 14L92 30L86 66L76 62V100H24V62L14 66L8 30Z"/><path d="M50 22V100M24 90H76M14 66l-2 12M86 66l2 12"/><path d="M34 54h10v10H34z"/></svg><span class="tag">HOT</span></div>
+        <div class="product-info"><h3 class="product-name">Bomber Jacket</h3><div class="product-price">From R850.00</div><div class="product-sizes">S &ndash; XXL</div><a class="product-btn" href="https://wa.me/27794652918?text=Hi%21%20I%27m%20interested%20in%20the%20Bomber%20Jacket." target="_blank" rel="noopener">Order via WhatsApp</a></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Cyberpunk Collection -->
+  <section class="wrap cy">
+    <div class="section-head">
+      <p class="cy-eyebrow">// SYSTEM ONLINE &middot; NIGHT CITY 2077</p>
+      <h2 class="display glitch" data-text="CYBER COLLECTION">CYBER COLLECTION</h2>
+      <p>Techwear for the neon hours. Armor up, then tap to lock in your size on WhatsApp.</p>
+    </div>
+    <div class="cy-grid">
+      <a href="https://wa.me/27794652918?text=Hi%21%20I%27m%20interested%20in%20the%20Neon%20Circuit%20Jacket." target="_blank" rel="noopener" class="cy-card reveal" data-cat="cyber">
+        <span class="cy-code">ARMOR-01</span>
+        <svg class="cy-art" viewBox="0 0 100 120" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"><path d="M35 15 L50 22 L65 15 L90 30 L82 62 L72 58 L72 108 L28 108 L28 58 L18 62 L10 30 Z"/><path d="M50 22 V108M34 70h12M54 70h12M34 85h12M54 85h12"/><path d="M22 36l6 10M78 36l-6 10"/></svg>
+        <h3 class="cy-name">NEON CIRCUIT JACKET</h3>
+        <div class="cy-meta"><span>R950.00</span><span>S &ndash; XXL</span></div>
+        <div class="cy-btn">&gt; ORDER_VIA_WHATSAPP</div>
+      </a>
+      <a href="https://wa.me/27794652918?text=Hi%21%20I%27m%20interested%20in%20the%20Cyber%20Cargo%20Pants." target="_blank" rel="noopener" class="cy-card reveal" data-cat="cyber">
+        <span class="cy-code">ARMOR-02</span>
+        <svg class="cy-art" viewBox="0 0 100 120" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"><path d="M28 10 H72 L76 110 H54 L50 50 L46 110 H24 Z"/><path d="M28 10 L50 22 L72 10M30 60h10v14H30zM60 60h10v14H60z"/></svg>
+        <h3 class="cy-name">CYBER CARGO PANTS</h3>
+        <div class="cy-meta"><span>R650.00</span><span>Waist: 28 &ndash; 38</span></div>
+        <div class="cy-btn">&gt; ORDER_VIA_WHATSAPP</div>
+      </a>
+      <a href="https://wa.me/27794652918?text=Hi%21%20I%27m%20interested%20in%20the%20Data-Stream%20Hoodie." target="_blank" rel="noopener" class="cy-card reveal" data-cat="cyber">
+        <span class="cy-code">ARMOR-03</span>
+        <svg class="cy-art" viewBox="0 0 100 120" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"><path d="M32 14 Q50 30 68 14 L92 32 L84 64 L74 60 L74 108 L26 108 L26 60 L16 64 L8 32 Z"/><path d="M50 30 V62M42 62h16v18H42z M40 40l-4 14M60 40l4 14"/></svg>
+        <h3 class="cy-name">DATA-STREAM HOODIE</h3>
+        <div class="cy-meta"><span>R600.00</span><span>S &ndash; XXL</span></div>
+        <div class="cy-btn">&gt; ORDER_VIA_WHATSAPP</div>
+      </a>
+      <a href="https://wa.me/27794652918?text=Hi%21%20I%27m%20interested%20in%20the%20Glitch%20Tee." target="_blank" rel="noopener" class="cy-card reveal" data-cat="cyber">
+        <span class="cy-code">ARMOR-04</span>
+        <svg class="cy-art" viewBox="0 0 100 120" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"><path d="M35 12 L50 20 L65 12 L90 28 L80 46 L72 42 L72 100 L28 100 L28 42 L20 46 L10 28 Z"/><path d="M36 62h28M36 72h16M36 82h22" stroke-dasharray="3 3"/></svg>
+        <h3 class="cy-name">GLITCH TEE</h3>
+        <div class="cy-meta"><span>R300.00</span><span>S &ndash; XXL</span></div>
+        <div class="cy-btn">&gt; ORDER_VIA_WHATSAPP</div>
+      </a>
+    </div>
+  </section>
+
+  <section class="wrap perks">
+    <div class="perk reveal"><b>01</b><h4>Cold-Night Heavy</h4><p>Thick fabrics made for Cape Town winters.</p></div>
+    <div class="perk reveal"><b>02</b><h4>Real Fits</h4><p>Unisex cuts, sizes S to XXL, waists 28 to 38.</p></div>
+    <div class="perk reveal"><b>03</b><h4>Order in Seconds</h4><p>Tap, chat on WhatsApp, lock your size.</p></div>
+  </section>
+
+  <!-- Size Guide -->
+  <section class="wrap">
+    <div class="size-guide reveal">
+      <div class="size-header">
+        <h3 class="display">SIZE GUIDE</h3>
+        <p style="color: var(--text-dim); margin: 0;">Unisex fit. Measurements are approximate chest width in cm.</p>
+      </div>
+      <div class="size-table-wrap">
+        <table class="size-table">
+          <thead>
+            <tr>
+              <th>Size</th>
+              <th>Small (S)</th>
+              <th>Medium (M)</th>
+              <th>Large (L)</th>
+              <th>X-Large (XL)</th>
+              <th>XX-Large (XXL)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Chest (cm)</td>
+              <td>50 - 52</td>
+              <td>53 - 55</td>
+              <td>56 - 58</td>
+              <td>59 - 61</td>
+              <td>62 - 64</td>
+            </tr>
+            <tr>
+              <td>Length (cm)</td>
+              <td>68</td>
+              <td>70</td>
+              <td>72</td>
+              <td>74</td>
+              <td>76</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="size-sub">Denims &amp; cargo pants &mdash; waist</p>
+      <div class="size-table-wrap">
+        <table class="size-table">
+          <thead><tr><th>Waist (in)</th><th>28</th><th>30</th><th>32</th><th>34</th><th>36</th><th>38</th></tr></thead>
+          <tbody><tr><td>Waist (cm)</td><td>71</td><td>76</td><td>81</td><td>86</td><td>91</td><td>97</td></tr></tbody>
+        </table>
+      </div>
+      <p class="size-sub dim">Between sizes? Go up one for a relaxed fit.</p>
+    </div>
+  </section>
+
+</main>
+<a class="fab" href="https://wa.me/27794652918" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39a9.9 9.9 0 0 0 4.75 1.21h.01c5.46 0 9.9-4.45 9.9-9.91C21.96 6.45 17.5 2 12.04 2Z"/></svg></a>
+
+<footer class="wrap" style="max-width: 100%; padding-left: clamp(20px, 5vw, 56px); padding-right: clamp(20px, 5vw, 56px);">
+  <div class="wrap" style="padding: 0; max-width: 1200px;">
+    <div class="footer-row">
+      <div class="footer-brand">
+        <div class="display drippy" style="letter-spacing: 2px;">PSYCHO APPLE</div>
+        <p>Cape Town streetwear. Built for the cold nights.</p>
+      </div>
+      <div class="footer-contact">
+        <a href="https://wa.me/27794652918" target="_blank" rel="noopener"><span class="label">WhatsApp</span>+27 79 465 2918</a>
+        <a href="mailto:Jeandreamerica49@gmail.com"><span class="label">Email</span>Jeandreamerica49@gmail.com</a>
+        <span><span class="label">Based in</span>Cape Town, South Africa</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Psycho Apple</span>
+      <span>CPT 021 // All Rights Reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var pb=document.getElementById('progress');
+  function prog(){var h=document.documentElement;pb.style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight||1)*100)+'%';}
+  addEventListener('scroll',prog,{passive:true});prog();
+  var els=document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.12});
+    els.forEach(function(el,i){el.style.transitionDelay=(i%4)*80+'ms';io.observe(el);});
+  } else els.forEach(function(el){el.classList.add('in');});
+  if(matchMedia('(hover:hover) and (pointer:fine)').matches){
+    var g=document.getElementById('glow');
+    addEventListener('pointermove',function(e){g.style.opacity=1;g.style.left=e.clientX+'px';g.style.top=e.clientY+'px';});
+    document.querySelectorAll('.product-card').forEach(function(c){
+      c.addEventListener('pointermove',function(e){var r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;c.style.transform='perspective(700px) rotateY('+x*10+'deg) rotateX('+(-y*10)+'deg) translateY(-6px)';});
+      c.addEventListener('pointerleave',function(){c.style.transform='';});
+    });
+  }
+})();
+</script>
+<script>
+(function(){
+  var NUM='27794652918';
+  var SOCIAL={instagram:'',facebook:''};
+  var DROP=new Date('2026-10-09T18:00:00+02:00').getTime();
+
+  document.querySelectorAll('[data-social]').forEach(function(a){
+    var u=SOCIAL[a.getAttribute('data-social')];
+    if(u){a.href=u;a.target='_blank';a.rel='noopener';a.hidden=false;}
+  });
+
+  var dl=document.getElementById('dropLabel'),tm=document.getElementById('dropTimer');
+  var f2=function(n){return n<10?'0'+n:''+n;};
+  dl.textContent='Drops '+new Date(DROP).toLocaleString('en-ZA',{weekday:'short',day:'numeric',month:'short',hour:'2-digit',minute:'2-digit',timeZone:'Africa/Johannesburg'});
+  function tick(){
+    var d=DROP-Date.now();
+    if(d<=0){clearInterval(t);dl.hidden=true;tm.className='drop-live';tm.textContent='LIVE NOW';return;}
+    var s=Math.floor(d/1000);
+    document.getElementById('dD').textContent=f2(Math.floor(s/86400));
+    document.getElementById('dH').textContent=f2(Math.floor(s%86400/3600));
+    document.getElementById('dM').textContent=f2(Math.floor(s%3600/60));
+    document.getElementById('dS').textContent=f2(s%60);
+  }
+  var t=setInterval(tick,1000);tick();
+
+  function group(label,cls,items,pick,isSwatch){
+    var wrap=document.createElement('div');wrap.className='opt';
+    var l=document.createElement('span');l.className='opt-l';
+    var cur=document.createElement('b');l.appendChild(document.createTextNode(label+' '));l.appendChild(cur);
+    var row=document.createElement('div');row.className=cls;row.setAttribute('role','radiogroup');row.setAttribute('aria-label',label);
+    items.forEach(function(it){
+      var b=document.createElement('button');b.type='button';b.setAttribute('role','radio');b.setAttribute('aria-checked','false');
+      if(isSwatch){b.className='sw';b.style.setProperty('--c',it.h);b.setAttribute('aria-label',it.n);}
+      else{b.className='chip';b.textContent=it.n;}
+      b.addEventListener('click',function(){
+        row.querySelectorAll('[role=radio]').forEach(function(x){x.setAttribute('aria-checked','false');});
+        b.setAttribute('aria-checked','true');cur.textContent=it.n;pick(it.n);
+      });
+      row.appendChild(b);
+    });
+    wrap.appendChild(l);wrap.appendChild(row);
+    return {el:wrap,row:row,cur:cur};
+  }
+
+  document.querySelectorAll('.product-card').forEach(function(card){
+    var name=card.dataset.name;
+    var sizes=(card.dataset.sizes||'').split(',').filter(Boolean).map(function(s){return{n:s};});
+    var colors=(card.dataset.colors||'').split('|').filter(Boolean).map(function(c){var p=c.split(':');return{n:p[0],h:p[1]};});
+    var stock=parseInt(card.dataset.stock,10)||0;
+    var st={size:'',color:colors.length?colors[0].n:''};
+    var btn=card.querySelector('.product-btn'),info=card.querySelector('.product-info'),old=card.querySelector('.product-sizes');
+    function upd(){
+      var m="Hi! I'd like to order the "+name;
+      if(st.size)m+=' in size '+st.size;
+      if(st.color)m+=(st.size?', ':' in ')+st.color;
+      m+='. Is it available?';
+      btn.href='https://wa.me/'+NUM+'?text='+encodeURIComponent(m);
+      btn.textContent=st.size?'Order '+st.size+(st.color?' \u00b7 '+st.color:'')+' on WhatsApp':'Order via WhatsApp';
+    }
+    if(colors.length>1){
+      var g=group('Colour','swatches',colors,function(v){st.color=v;upd();},true);
+      g.row.firstChild.setAttribute('aria-checked','true');g.cur.textContent=colors[0].n;
+      info.insertBefore(g.el,btn);
+    }
+    if(sizes.length){
+      var lbl=/^\d/.test(sizes[0].n)?'Waist':'Size';
+      var s=group(lbl,'chips',sizes,function(v){st.size=v;upd();},false);
+      info.insertBefore(s.el,btn);
+      if(old)old.remove();
+    }
+    if(stock>0&&stock<=5){
+      var p=document.createElement('span');p.className='stock';p.textContent='Only '+stock+' left';
+      card.querySelector('.product-img-wrap').appendChild(p);
+    }
+    upd();
+  });
+
+  var bar=document.querySelector('.filters'),secs=document.querySelectorAll('main section.wrap');
+  var items=document.querySelectorAll('.product-card,.cy-card');
+  bar.addEventListener('click',function(e){
+    var b=e.target.closest('button');if(!b)return;
+    var f=b.getAttribute('data-f');
+    bar.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false');});
+    items.forEach(function(c){c.hidden=!(f==='all'||c.dataset.cat===f);});
+    secs.forEach(function(s){
+      var all=s.querySelectorAll('.product-card,.cy-card');
+      if(!all.length)return;
+      s.hidden=!Array.prototype.some.call(all,function(c){return !c.hidden;});
+    });
+  });
+})();
+</script>
+<script>
+(function(){
+  var b=document.getElementById('bubbles'),i,e,z;
+  var n=(matchMedia('(max-width:720px)').matches||(navigator.hardwareConcurrency||8)<=4)?9:22;
+  for(i=0;i<n;i++){e=document.createElement('i');e.className='bub';z=18+Math.random()*100;
+    e.style.cssText='width:'+z+'px;height:'+z+'px;left:'+Math.random()*100+'%;--sw:'+(Math.random()*70-35)+'px;animation-duration:'+(14+Math.random()*20)+'s;animation-delay:-'+Math.random()*30+'s';
+    b.appendChild(e);}
+})();
+</script>
+</body>
+</html>
